@@ -8,7 +8,7 @@ hoja = "Hoja1"  # Reemplaza con el nombre de la hoja si es necesario
 df = pd.read_excel(archivo_excel, sheet_name=hoja, header=None, engine="openpyxl")
 
 # Guardar en CSV asegurando formato correcto
-archivo_csv = "matriz.csv"
+archivo_csv = "matriz.txt"
 df.to_csv(archivo_csv, sep=" ", index=False, header=False, float_format="%.4f")
 
 print(f"Archivo convertido y guardado como {archivo_csv}")
